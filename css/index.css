@@ -1,0 +1,219 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: arial narrow;
+	text-align: center;
+	word-spacing: 1px;
+	margin: 0px;
+}
+
+#container {
+	width: 1024px;
+}
+
+#content {
+	text-align: center;
+	width: 874px;
+}
+
+#content2 {
+	width: 874px;
+}
+
+#image_content {
+	text-align: center;
+	width: 1024px;
+}
+
+h1 {
+	font-family: arial narrow;
+	font-size: 30px;
+	text-align: center;
+	word-spacing: 1px;
+	vertical-align: center;
+	color: #444;
+}
+
+h2 {
+	font-family: arial narrow;
+	text-align: center;
+	word-spacing: 1px;
+	color: #444;
+}
+
+h4 {
+	color: #5c67a0;
+	background-color: white;
+	font-size: 16pt;
+	font-weight: 100;
+}
+
+h5 {
+	color: #5c67a0;
+	font-size: 14pt;
+	font-weight: 100;
+}
+
+h6 {
+	color: #7582b1;
+	font-size: 12pt;
+	font-weight: 100;
+}
+
+p {
+	font-family: arial narrow;
+	text-align: center;
+	word-spacing: 1px;
+	color: black;
+	font-size: 12px;
+}
+
+p.title {
+	font-family: arial narrow;
+	text-align: left;
+	word-spacing: 1px;
+	color: gray;
+	font-size: 14px;
+}
+
+img.mLogo {
+	position: relative;
+	vertical-align: center;
+	horizontal-align: center;
+	width: 384px;
+	height: 384px;
+}
+
+img.navimage {
+	border: 0px;
+	width: 15px;
+	height: 21px;
+}
+
+a:link {
+	text-decoration: none;
+	color: gray;
+}
+
+a:visited {
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-family: arial-narrow;
+	color: blue;
+}
+
+#footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	text-align: center;
+	width: 1024px;
+}
+
+#footernav {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 1024px;
+	text-align: center;
+	font-size: 11px;
+}
+
+/*---------- Wrap ----------*/
+
+#wrap {
+	width: 100%; /* Spans the width of the page */
+	height: 44px; 
+	margin: 0px auto 1em; /* Ensures there is no space between sides of the screen and the menu */
+	margin-bottom: 0px;
+	z-index: 9999; /* Makes sure that your menu remains on top of other page elements */
+	position: relative; 
+	background-color: #444;
+	text-align: center;
+	min-width: 100%
+	
+}
+
+.navbar	{
+	font-family: arial-narrow;
+	height: 44px;
+	width: 1024px;
+	padding: 0;
+	margin: 0;
+	position: relative; /* Ensures that the menu doesn’t affect other elements */
+	text-align: center;	
+}
+	
+.navbar li {
+	height: 44px;
+	width: 112px;  /* Each menu item is 150px wide */
+	float: left;  /* This lines up the menu items horizontally */
+	text-align: center;  /* All text is placed in the center of the box */
+	list-style: none;  /* Removes the default styling (bullets) for the list */
+	/*font: normal bold 13px/1.2em Arial narrow, Verdana, Helvetica;  */
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	margin: 0;
+	background-color: #444;
+	display: inline;
+	vertical-align: top;
+}
+
+.navbar a {							
+	padding: 10px;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+	/*border-left: 1px solid black; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+	/*border-right: 1px solid black;*/ /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+	text-decoration: none;  /* Removes the default hyperlink styling. */
+	color: white; /* Text color is white */
+	display: block;
+	height: 24px;
+	font-size: 18px;
+}
+
+.navbar li:hover, a:hover {
+	background-color: none;
+	color: gray;
+} 
+
+.navbar li ul {
+	display: none;  /* Hides the drop-down menu */
+	height: auto;
+	margin-top: 0px;
+	margin-left: 0px; /* Aligns drop-down box underneath the menu item */
+	padding: 0; /* Aligns drop-down box underneath the menu item */
+}				
+
+.navbar li:hover ul {
+	display: block; /* Displays the drop-down box when the menu item is hovered over */
+}
+
+.navbar li ul li {
+	background-color: #444
+} 
+ 
+.navbar li ul li a {
+ 	/*border-left: 1px solid #1f5065; 
+ 	border-right: 1px solid #1f5065; 
+ 	border-top: 1px solid #74a3b7;
+ 	border-bottom: 1px solid #1f5065;*/ 
+	font-size: 12px;
+	/*width: 200px;*/
+	background-color: #444;
+	text-align: left;
+	horizontal-align: center;
+}
+ 
+.navbar li ul li a:hover	{
+	background-color: #444
+}
+	
