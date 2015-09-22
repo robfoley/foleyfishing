@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-	width: 1024px;
+	width: 100%;
 }
 
 h1 {
@@ -64,7 +64,7 @@ p {
 	bottom: 0;
 	height: 100px;
 	text-align: center;
-	width: 1024px;
+	width: 100%;
 }
 
 #footernav {
@@ -111,7 +111,7 @@ p {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	position: relative; /* Ensures that the menu doesn’t affect other elements */
 	text-align: center;	
 }
 	
