@@ -11,7 +11,19 @@ body {
 
 #container {
 	width: 100%;
+	margin: 0 auto;
 }
+
+#top {
+	width: 960px;
+	height: 320px;
+	clear: both;
+	margin: 0 auto;
+}
+
+
+
+
 
 h1 {
 	color: white;
