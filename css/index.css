@@ -2,16 +2,13 @@ html {
 	height: 100%;
 }
 
+/*---------- Page Layout ----------*/
+
 body {
 	font-family: arial narrow;
 	text-align: center;
 	word-spacing: 1px;
 	margin: 0px;
-}
-
-#container {
-	width: 100%;
-	margin: 0 auto;
 }
 
 #header {
@@ -26,13 +23,38 @@ body {
 	min-width: 100%
 }
 
+table {
+	width: 100%;
+	height: 44px;
+}
+table td {
+	width: 20%;
+}
+
+table td td {
+	width: 60%;
+}
+
+table td td td {
+	width: 20%;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 44px;
+}
+
 #top {
 	display: block;
 	height: 320px;
 	width: 960px;
 	margin: 0 auto;
-	background-color: blue;
 }
+
+/*.image:hover { background: rgba(151,151,149,0.9); 
+	
+}*/
 
 #left {
 	display: block;
@@ -59,23 +81,44 @@ body {
 }
 
 #footer {
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
 	height: 100px;
 	text-align: center;
 	width: 100%;
 }
 
-/*#footernav {
-	position: relative;
-	left: 0;
-	bottom: 0;
-	height: 100px;
-	width: 1024px;
-	text-align: center;
-	font-size: 11px;
-}*/
+a {							
+	padding: 0px;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+	/*border-left: 1px solid black; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+	/*border-right: 1px solid black;*/ /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+	text-decoration: none;  /* Removes the default hyperlink styling. */
+	color: white; /* Text color is white */
+	display: block;
+	height: 24px;
+	font-size: 18px;
+	display: inline;
+	vertical-align: center;
+}
 
+
+
+
+p {
+	font-family: sf-light;
+	/*font-variant: small-caps;*/
+	text-align: center;
+	word-spacing: 1px;
+	color: black;
+	font-size: 12px;
+}
+
+/*---------- Fonts ----------*/
+
+@font-face {
+	font-family: sf-light;
+	src: url('fonts/sf/SF-UI-Display-Light.otf');
+}
 
 h1 {
 	color: white;
@@ -115,29 +158,6 @@ h6 {
 	font-weight: 100;
 }
 
-p {
-	font-family: sf-light;
-	/*font-variant: small-caps;*/
-	text-align: center;
-	word-spacing: 1px;
-	color: black;
-	font-size: 12px;
-}
-
-
-
-/*---------- Wrap ----------*/
-
-
-
-/*---------- Custom Fonts ----------*/
-
-@font-face {
-	font-family: sf-light;
-	src: url('fonts/sf/SF-UI-Display-Light.otf');
-}
-
-
 
 
 
@@ -171,17 +191,7 @@ p {
 /*	vertical-align: center;
 /*}*/
 
-.navbar a {							
-	padding: 0px;  /* Adds a padding on the top and bottom so the text appears centered vertically */
-	/*border-left: 1px solid black; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
-	/*border-right: 1px solid black;*/ /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
-	text-decoration: none;  /* Removes the default hyperlink styling. */
-	color: white; /* Text color is white */
-	display: block;
-	height: 24px;
-	font-size: 18px;
-	display: inline;
-}
+
 /*
 /*.navbar li:hover, a:hover {
 /*	background-color: none;
@@ -219,6 +229,16 @@ p {
 /*.navbar li ul li a:hover	{
 /*	background-color: #444*/
 /*}*/
+
+/*#footernav {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 1024px;
+	text-align: center;
+	font-size: 11px;
+}*/
 
 /*------------Popup box----------*/
 .modalDialog {
